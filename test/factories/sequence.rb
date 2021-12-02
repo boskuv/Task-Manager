@@ -8,7 +8,7 @@ FactoryBot.define do
   sequence :avatar do |n|
     "path/to/avatar#{n}"
   end
-  sequence :expired_at do |n|    
+  sequence :expired_at do |n|
     DateTime.current + n.days
   end
 end
